@@ -1,0 +1,328 @@
+===== lib.gshoot.base.display.storydisplay_textver.lu
+--- k[4]
+lib.util.log
+--- k[6]
+lib.gshoot.base.display.storydisplay
+--- k[7]
+lib.util.env
+--- k[8]
+lib.gshoot.base.status
+--- k[9]
+lib.gshoot.sound.seplayer
+--- k[10]
+lib.control.decofont
+--- k[11]
+lib.util.stringutil
+--- k[12]
+displayObject
+--- k[13]
+txt_stage1
+--- k[14]
+Indra soars across the sky. The screams of the people and
+the darkness engulfing the sky are signals of the monster's revival.
+Indra's sole purpose of being is to destroy that evil,
+which threatens to swallow the world whole.
+--- k[15]
+txt_stage2
+--- k[16]
+Goliath is the name of the battleship that protected people from the demon invasions.
+The hero that was once celebrated as the Steel Guardian has now
+become a den full of evil monsters. Deep inside, Vritra's presence can be felt.
+Indra must find a way to infiltrate the den.
+--- k[17]
+txt_stage3
+--- k[18]
+Sensing the strong presence of Vritra, Indra ventures inside Goliath.
+The inside of the ship is infested with cellular fibers that likely belong to Vritra,
+making it resemble the inside of a living organism.
+He must be in here somewhere. But something feels strange.
+--- k[19]
+txt_stage4
+--- k[20]
+The Forest Ruins commenced attack as if it were lying in wait for Indra.
+Could this be another symptom of Vritra's return?
+But time is of the essence. Nightfall is approaching.
+--- k[21]
+txt_stage5
+--- k[22]
+The weapons of an ancient civilization gleam ominously in wait to eliminate all invaders.
+Indra's strength has steadily diminished as he fights one fierce battle after another.
+But he can't turn back now. He must defeat Vritra before nightfall.
+--- k[24]
+A scorpion-shaped monster that was awakened by the return of Vritra.
+The cursed monster awakens from its slumber in the depths of the earth to attack Indra.
+Its tail, harder than steel, pierces and destroys all that stands in its way.
+--- k[26]
+The fused form of Goliath's security system and a spider monster.
+By crawling along its web, it can move freely through the air to prey upon invaders.
+Its extremely hot silk instantly melts and reduces its prey to dust
+rather than simply capturing them.
+--- k[28]
+A clone of Vritra, created by Vritra himself. By multiplying its own
+decaying flesh, it is engulfing Goliath, which shelters its spirit.
+Even though its body is composed merely of bones and a small amount of
+decaying flesh, it is no less powerful than Vritra himself.
+--- k[30]
+A bee-shaped monster that guards the ancient ruins.
+This extremely mobile monster can shoot projectiles from various angles,
+turning its targets into beehives.The powerful lightning attacks that
+it emits from time to time engulf everything, leaving not even a shadow.
+--- k[32]
+A dragonfly-shaped monster that rules over the ancient ruins.
+With its surveillance network that uses its many eyes,
+it eliminates the remains of all intruders in the ancient ruins.
+Escaping its pursuit is no easy feat.
+--- k[34]
+Indra has finally reached his arch-enemy, Vritra.
+But he must hurry. Once night falls, he will attain the unparalleled strength.
+"Evil Dragon Vritra. My sole purpose of being is to destroy you."
+--- k[36]
+Vritra's true form after being freed from the shackles of the sun and
+releasing the power of darkness. The chances of defeating him are
+close to zero. This is all the more reason why Indra must face him.
+"Let's end this now... Let’s end the war that has haunted us for eternity."
+--- k[37]
+initialize
+--- p[0].k[3]
+STORY_TELLING
+--- p[1].k[8]
+UI_FONT_1M2
+--- p[1].k[14]
+setFillColor
+--- p[1].k[21]
+addEventListener
+--- p[1].k[22]
+enterFrame
+--- p[1].p[0].k[9]
+removeEventListener
+--- p[1].p[1].k[4]
+removeSelf
+--- p[2].k[1]
+containerDestroy
+--- p[3].k[5]
+update() -> 
+--- p[3].k[15]
+SpriteAssets
+--- p[3].k[16]
+getInstance
+--- p[3].k[34]
+transition
+--- p[3].k[43]
+onComplete
+--- p[4].k[1]
+initialize()
+--- p[4].k[8]
+StatusEvent
+--- p[4].k[9]
+DISPLAY_STORY
+===== lib.gshoot.content.ending_pc.lu
+--- k[4]
+lib.util.log
+--- k[6]
+lib.gshoot.content.ending_pc
+--- k[7]
+lib.util.env
+--- k[8]
+lib.gshoot.base.status
+--- k[9]
+lib.gshoot.sound.seplayer
+--- k[10]
+lib.gshoot.sound.bgmplayer
+--- k[11]
+lib.gshoot.content.contentmanager
+--- k[12]
+displayObject
+--- k[15]
+initialize
+--- p[1].k[0]
+changeReady
+--- p[1].k[1]
+fadeoutBGM
+--- p[2].k[3]
+ContentType
+--- p[2].k[4]
+GAMEOVER_PC
+--- p[4].k[1]
+is_button_active
+--- p[4].k[6]
+botton_count
+--- p[4].k[9]
+dispatchEvent
+--- p[4].k[10]
+StatusEvent
+--- p[4].k[12]
+ContentEvent
+--- p[4].k[13]
+BUTTON_GUIDE_SHOW
+--- p[4].k[14]
+btn_cancel
+--- p[4].k[17]
+BUTTON_GUIDE_HIDE
+--- p[5].k[2]
+initialize!
+--- p[5].k[3]
+SpriteAssets
+--- p[5].k[4]
+setEndingSprites
+--- p[5].k[5]
+isAllCleared
+--- p[5].k[14]
+screen_width
+--- p[5].k[17]
+screen_height
+--- p[5].k[20]
+lib.gshoot.content.ending.endanime_pc
+--- p[5].k[24]
+lib.gshoot.content.ending.skyfield
+--- p[5].k[29]
+asset_ui/ending_title.png
+--- p[5].k[33]
+staff_category_1
+--- p[5].k[35]
+staff_name_1
+--- p[5].k[37]
+staff_category_2
+--- p[5].k[38]
+staff_name_2
+--- p[5].k[39]
+staff_category_3
+--- p[5].k[40]
+staff_name_3
+--- p[5].k[41]
+staff_category_4
+--- p[5].k[42]
+staff_name_4
+--- p[5].k[43]
+staff_category_5
+--- p[5].k[44]
+staff_name_5
+--- p[5].k[45]
+staff_category_6
+--- p[5].k[46]
+staff_name_6
+--- p[5].k[48]
+staff_category_7
+--- p[5].k[49]
+staff_name_7
+--- p[5].k[50]
+staff_name_8
+--- p[5].k[51]
+staff_name_9
+--- p[5].k[52]
+staff_name_10
+--- p[5].k[53]
+staff_name_11
+--- p[5].k[54]
+staff_name_12
+--- p[5].k[55]
+staff_name_13
+--- p[5].k[56]
+staff_name_14
+--- p[5].k[57]
+staff_name_15
+--- p[5].k[58]
+staff_name_16
+--- p[5].k[59]
+staff_name_17
+--- p[5].k[60]
+staff_name_18
+--- p[5].k[61]
+staff_name_19
+--- p[5].k[62]
+staff_name_20
+--- p[5].k[63]
+staff_name_21
+--- p[5].k[64]
+staff_name_22
+--- p[5].k[66]
+asset_ui/ending_neotro.png
+--- p[5].k[69]
+contentHeight
+--- p[5].k[74]
+getInstance
+--- p[5].k[81]
+lastmessage
+--- p[5].k[82]
+staff_lastmessage
+--- p[5].k[85]
+addEventListener
+--- p[5].k[86]
+enterFrame
+--- p[5].k[89]
+performWithDelay
+--- p[5].k[97]
+GameControllerEvent
+--- p[5].k[100]
+difficulty
+--- p[5].k[104]
+BGM_ENDING_2
+--- p[5].k[105]
+BGM_ENDING_1
+--- p[5].p[0].k[2]
+transition
+--- p[5].p[5].k[13]
+EXTEND_DRAGON
+--- p[6].k[2]
+ending destroy!
+--- p[6].k[4]
+deleteAddedSprites
+--- p[6].k[6]
+removeEventListener
+===== lib.gshoot.content.ending.staffrollitem.lu
+--- k[4]
+lib.util.log
+--- k[6]
+lib.gshoot.content.ending.staffrollitem
+--- k[7]
+lib.util.env
+--- p[1].k[2]
+removeSelf
+--- p[2].k[2]
+setReferencePoint
+--- p[2].k[3]
+TopCenterReferencePoint
+--- p[2].k[16]
+  stopped:
+===== lib.gshoot.content.corporate.lu
+--- k[4]
+lib.util.log
+--- k[6]
+lib.gshoot.content.corporate
+--- k[7]
+lib.util.env
+--- k[8]
+lib.gshoot.sound.bgmplayer
+--- k[9]
+lib.gshoot.content.contentmanager
+--- k[10]
+lib.gshoot.type.contenttype
+--- k[11]
+displayObject
+--- k[12]
+destroyReady
+--- k[13]
+initialize
+--- p[1].k[1]
+ContentType
+--- p[1].k[2]
+MAINMENU_PC
+--- p[2].k[1]
+initialize!
+--- p[2].k[6]
+screen_width
+--- p[2].k[9]
+screen_height
+--- p[2].k[10]
+total_width
+--- p[2].k[11]
+total_height
+--- p[2].k[17]
+setFillColor
+--- p[2].k[20]
+asset_ui/logo_neotro.png
+--- p[2].k[25]
+fadeoutBGM
+--- p[2].k[28]
+performWithDelay
+--- p[3].k[4]
+removeSelf
